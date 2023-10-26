@@ -1,6 +1,12 @@
 steps:
   - label: ":eslint: ESLint"
     command: npm run eslint
+    plugins:
+      - docker-compose#v3.8.0:
+        run: web
 
-  - label: ":prettier:  Prettier"
+  - label: ":prettier: Prettier"
     command: npm run prettier
+    plugins:
+      - docker-compose#v3.8.0:
+        run: web
