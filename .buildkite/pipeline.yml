@@ -3,10 +3,10 @@ steps:
     command: npm run eslint
     plugins:
       - docker-compose#v3.8.0:
-        run: web
+          run: web
 
   - label: ":prettier: Prettier"
     command: npm run prettier
     plugins:
       - docker-compose#v3.8.0:
-        run: web
+          run: web
